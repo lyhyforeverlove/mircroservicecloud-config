@@ -4,24 +4,25 @@ spring:
     
 ---
 server:
-    port: 8201
-spring: 
-    profiles: dev
-    application: 
-        name: microservicecloud-config-client
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-client
 eureka:
-    client:
-        server-url:
-            defaultZone: http://eureku.dev.com:7001/eureku
+  client:
+    service-url:
+      defaultZone: http://eureku.dev.com:7001/eureku
         
 ---
 server:
-    port: 8202
-spring: 
-    profiles: test
-    application: 
-        name: microservicecloud-config-client
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-client
 eureka:
-    client:
-        server-url:
-            defaultZone: http://eureku.dev.com:7001/eureku
+  client:
+    service-url:
+      defaultZone: http://eureku.test.com:7001/eureku
+      
