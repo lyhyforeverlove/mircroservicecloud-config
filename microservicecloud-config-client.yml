@@ -9,7 +9,7 @@ spring:
     profiles: dev
     application: 
         name: microservicecloud-config-client
-eureku:
+eureka:
     client:
         server-url:
             defaultZone: http://eureku.dev.com:7001/eureku
@@ -21,7 +21,7 @@ spring:
     profiles: test
     application: 
         name: microservicecloud-config-client
-eureku:
+eureka:
     client:
         server-url:
             defaultZone: http://eureku.dev.com:7001/eureku
